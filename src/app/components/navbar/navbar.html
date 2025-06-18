@@ -1,0 +1,83 @@
+<nav class="bg-white shadow-sm sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16">
+      <div class="flex items-center">
+        <div class="flex-shrink-0 flex items-center" (click)="navigateToHome()">
+          <span class="text-2xl font-bold text-blue-600"
+            >TNT<span class="text-black">App</span></span
+          >
+          <span
+            class="ml-2 text-sm font-medium bg-blue-100 text-blue-800 px-2 py-0.5 rounded"
+            >Studio</span
+          >
+        </div>
+      </div>
+      <div class="hidden md:flex items-center space-x-8">
+        <a
+          href="/home"
+          class="nav-link text-sm font-medium text-gray-900 hover:text-blue-600 px-1"
+          >Home</a
+        >
+        <a
+          href="/privacy"
+          class="nav-link text-sm font-medium text-gray-900 hover:text-blue-600 px-1"
+          >Privacy</a
+        >
+        <a
+          href="/eula"
+          class="nav-link text-sm font-medium text-gray-900 hover:text-blue-600 px-1"
+          >EULA</a
+        >
+        <a
+          href="/contact"
+          class="nav-link text-sm font-medium text-gray-900 hover:text-blue-600 px-1"
+          >Contact</a
+        >
+      </div>
+      <div class="hidden md:flex items-center">
+        <a
+          href="/contact"
+          class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+        >
+          Get Started
+        </a>
+      </div>
+      <div class="-mr-2 flex items-center md:hidden">
+        <button
+          type="button"
+          (click)="toggleMobileMenu()"
+          class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
+        >
+          <span class="sr-only">Open main menu</span>
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div *ngIf="mobileMenuOpen" class="md:hidden bg-white border-t">
+    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+      <a
+        href="/home"
+        class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-blue-600 hover:bg-gray-50"
+        >Home</a
+      >
+      <a
+        href="/privacy"
+        class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-blue-600 hover:bg-gray-50"
+        >Privacy</a
+      >
+      <a
+        href="/eula"
+        class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-blue-600 hover:bg-gray-50"
+        >EULA</a
+      >
+      <a
+        href="/contact"
+        class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-blue-600 hover:bg-gray-50"
+        >Contact</a
+      >
+    </div>
+  </div>
+</nav>
