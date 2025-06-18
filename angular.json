@@ -31,8 +31,7 @@
             ],
             "styles": [
               "src/styles.scss"
-            ],
-            "outputPath": "dist/tnt-app/browser"
+            ]
           },
           "configurations": {
             "production": {
